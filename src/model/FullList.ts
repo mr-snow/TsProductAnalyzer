@@ -10,7 +10,7 @@ interface List {
 }
 
 export default class FullList implements List {
-  static instace: FullList = new FullList();
+  static instance: FullList = new FullList();
 
   private constructor(private _list: ListItem[] = []) {}
 
@@ -35,7 +35,7 @@ export default class FullList implements List {
         itemObj._item,
         itemObj._checked
       );
-      FullList.instace.addItem(newListItem);
+      FullList.instance.addItem(newListItem);
     });
   }
 
